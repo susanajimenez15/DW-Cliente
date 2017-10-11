@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 10</title>
+</head>
+<body>
+    
+    <script>
+     
+        document.open;
+        
+        var cadena = "susana:jimenez:685826868:sujica94@hotmail.com:46020";
+        
+        function datos(cadena)
+        {
+            var datos = cadena.split(":");
+            
+            document.write("<p>El nombre es <b>"+datos[0]+"</b></p>");
+            document.write("<p>El apellido es <b>"+datos[1]+"</b></p>");
+            document.write("<p>El telefono es <b>"+datos[2]+"</b></p>");
+            document.write("<p>El email es <b>"+datos[3]+"</b></p>");
+            document.write("<p>El codigo postal es <b>"+datos[4]+"</b></p>");
+            
+            if(  datos[3].includes("@") )
+            {
+                var servidor = datos[3].split("@");
+                document.write("<p>El servidor es <b>"+servidor[1]+"</b></p>")
+            }
+        }
+        
+        datos(cadena);
+    
+    </script>
+</body>
+</html>

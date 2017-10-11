@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2</title>
+</head>
+<body>
+    
+    <script>
+ 
+        
+    
+        function calcular(n1, calculo, n2){
+           
+            document.open;
+            switch(calculo){
+                    
+                case "+":
+                    document.write("<p><b>Suma</b></p>");
+                    document.write("<p>"+n1+" "+calculo+" "+n2+" = "+(n1+n2)+"</p>");
+                    break;
+                case "-":
+                    document.write("<p><b>Resta</b></p>");
+                     document.write("<p>"+n1+" "+calculo+" "+n2+" = "+(n1-n2)+"</p>");
+                    break;
+                case "*":
+                    document.write("<p><b>Multiplicacion</b></p>");
+                    document.write("<p>"+n1+" "+calculo+" "+n2+" = "+(n1*n2)+"</p>");
+                    break;
+                case "/":
+                    document.write("<p><b>División</b></p>");
+                    document.write("<p>"+n1+" "+calculo+" "+n2+" = "+(n1/n2)+"</p>");
+                    break;
+                default: break;
+                    
+                   }
+       }
+    
+        calcular(5, "+", 3);
+        calcular(5, "-", 3);
+        calcular(5, "*", 3);
+        calcular(5, "/", 3);
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    
+    <script>
+        
+        document.open;
+        var cont = 0;
+        var numPares = 50;
+        for(var i = 0; i<=1000; i++)
+        {
+            cont++;
+            if(i%2==0 && cont<=numPares)
+            {
+                document.write("<p>"+i+"</p>");
+            }
+            if(cont == 51)
+            {
+                var masNums = confirm("¿Quieres que saque más números?");
+                if(masNums){ numPares = 101; }
+            }
+        }
+
+       
+    </script>
+</body>
+</html>

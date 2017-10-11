@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    
+    <script>
+     
+        var aDni = new Array();
+        var sDni = new String();
+        document.open;
+        //document.write(dni);
+         
+        setInterval(pedirDni, 2000);
+        
+        function pedirDni(){
+            
+            sDni = prompt("Dime tu dni");
+            //document.write(sDni.length);
+
+            if( sDni.length == 9 || sDni.includes(-1) )
+            {
+                 if ( sDni.includes(-1) != 0 )
+                 {
+                    for(var i = 0; i<=aDni.length-1; i++)
+                    {
+                        document.write(aDni[i].charAt(8).toUpperCase()+"</br>");
+                    }
+
+                }else
+                {
+                    aDni.push(sDni);
+                }
+                
+            }else {
+                alert("Introduce bien el dni");
+                pedirDni();
+            }
+            
+           
+            
+        }
+    
+    </script>
+</body>
+</html>

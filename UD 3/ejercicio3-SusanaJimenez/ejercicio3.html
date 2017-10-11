@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    
+    <script>
+        
+        document.open;
+        var fecha = new Date();
+        var dia = fecha.getDate();
+        var diaN = fecha.getDay();
+        var mes = fecha.getMonth();
+        var año = fecha.getFullYear();
+        
+        var dias = new Array("Lunes","Martes","Miercoles","Jueves","Viernes","Sabado", "Domingo");
+        
+        var meses = new Array("Enero","Febrero","Marzo","Abril","Mayo","Junio", "Julio","Agosto","Septiembre", "Octubre", "Noviembre", "Diciembre");
+        
+        document.write("<p>Hoy es "+dias[diaN-1]+" "+dia+" de "+meses[mes]+" de  "+año+"</p>");
+        
+    </script>
+</body>
+</html>

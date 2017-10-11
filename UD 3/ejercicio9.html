@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 9</title>
+</head>
+<body>
+    
+    
+    <script>
+    
+        document.open; 
+        
+        var numeros = new Array();
+        for(var i=1; i <= 100000; i++)
+        {
+            //document.write("<p>"+i+"</p>");
+            
+            if( i%2 == 0)
+            {
+                //document.write("<p>"+i+" es par.</p>");
+                var numLetra = i.toString();
+                //document.write("<p>"+numLetra+" en string.</p>");
+                
+                // lo separo por "", le doy la vuelta y lo vuelvo a unir
+                var numInverso = numLetra.split("").reverse().join("");
+                //document.write("<p>"+numInverso+" en inverso.</p>");
+               
+                if(numLetra == numInverso)
+                {
+                    numeros.push(i);    
+                }
+               
+            }
+        }
+        
+        for(numero in numeros)
+        {
+            document.write("<p>"+numeros[numero]+" : palíndromo y par.</p>");
+        }
+    </script>
+</body>
+</html>
